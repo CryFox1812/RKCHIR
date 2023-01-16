@@ -1,0 +1,71 @@
+.history_text {
+  color: #dfdfdf;
+  font-family: 'Nunito';
+}
+
+.history_text h2 {
+  margin-top: 0;
+}
+
+.history_text h3 {
+  color: #ffffff;
+  margin-top: 50px;
+}
+
+.history_text img {
+  min-width: 180px;
+  max-width: 220px;
+  width: 25%;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+@media screen and (max-width: 500px) {
+  .history_text img {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 1em;
+  }
+}
+
+.left {
+  float: left;
+  margin: 1rem 1rem .5rem 0;
+}
+
+.right {
+  float: right;
+  margin: 1rem 0 .5rem 1rem;
+}
+
+
+.href_box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+
+.href_box h3,
+.href_box a {
+  color: #cab57b;
+  width: 300px;
+}
+
+.href_box h3 {
+  margin-bottom: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.href_box a {
+  display: none;
+  margin-top: 3px;
+  text-decoration: none;
+}
+
+.ps {
+  margin-top: 50px;
+}
+
+.ps a {
+  color: #624c4e;
+}

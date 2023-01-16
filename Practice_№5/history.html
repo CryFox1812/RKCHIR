@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Код блочного сайта</title>
+
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/header.css">
+  <link rel="stylesheet" href="static/css/article.css">
+  <link rel="stylesheet" href="static/css/cards.css">
+  <link rel="stylesheet" href="static/css/aside.css">
+  <link rel="stylesheet" href="static/css/footer.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--Оболочка страницы-->
+  <div id="wrapper"> 
+
+  <!--Шапка сайта-->
+  <header>
+    <nav class="top_nav">
+      <div class="nav_img">
+        <img src="static/img/chip.png">
+      </div>
+      <input id="menu_toggle" type="checkbox" />
+      <label class='menu_button_container' for="menu_toggle">
+      <div class='menu_button'></div>
+    </label>
+      <ul class="menu">
+        <li><a class="nav_home" href="home.html">home</a></li>
+        <li><a class="nav_history" href="history.html">history</a></li>
+        <li><a class="nav_innovations" href="innovations.html">innovations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!--Сайдбар-->
+    <aside>
+      <div id="sidebar">
+        <h3>Доп информация</h3>
+        <!--Прямая синяя линия-->
+        <hr>
+        <ul>
+          <li><a href="#"><h4>Раздел 1</h4></a></li>
+          <li><a href="#"><h4>Раздел 2</h4></a></li>
+          <li><a href="#"><h4>Раздел 3</h4></a></li>
+          <li><a href="#"><h4>Раздел 4</h4></a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!--Основной контент (статья)-->
+    <article>
+
+      <h2>История развития процессоров: из 70-х в 90-е</h2>
+      <div class="text">
+        Центральный процессор представляет из себя сложную интегральную схему, 
+        которая является одним из ключевых составляющих элементов современного ПК.
+        Первые компьютеры появились примерно в 40-х годах прошлого века, 
+        работая на электромеханических реле и вакуумных лампах. 
+        Они обеспечивали функционирование первых вычислительных машин. 
+        В 60-х годах появились первые интегральные микросхемы которые 
+        на долгое время стали неотъемлемой частью любого вычислительного 
+        устройства. Началом эпохи современных CPU можно смело назвать 1971-й год.
+      </div>
+      <h3>Intel 4004</h3>
+      <img class="intel_4004" src="static/img/intel_4004.jpg">
+      <div class="text">
+        <p>Первым однокристальным микропроцессором считается 4-битный Intel 4004, 
+        вышедший 15 ноября 1971 года. Компания Intel только начинала свой путь 
+        становления и ее создатели, Роберт Нойс, Гордон Мур и Эндрю Гроув, 
+        потратили немало сил на процесс развития. Благодаря вкладу итальянского 
+        физика Федерико Фаджина, инженерам компании удалось разместить ключевые 
+        компоненты на один чип и создать микропроцессор 4004.</p>
+        <p>Intel 4004 производился по 10-мкм техпроцессу, насчитывал 2250 транзисторов 
+        и работал на частоте 108 кГц (проводил 92 600 операций в секунду). 
+        Частота синхронизации была 740 кГц. Объем памяти доходил до 4 Кб, 
+        разрядность шины — 4 бита. Площадь кристалла составляла 12 мм2.</p>
+      </div>   
+      <h3>Intel 8008</h3>
+      <img class="intel_8008" src="static/img/intel_8008.jpg">
+      <div class="text">
+        <p>В начале 70-х компания выпустила первый 8-битный центральный процессор 
+        Intel 8008. Он разрабатывался одновременно с 4004 под заказ для Computer 
+        Terminal Corporation (в последствии Datapoint). Но компания отказалась 
+        от CPU (как и от сотрудничества с Intel) из-за того, что процесс создания 
+        микросхемы вышел за пределы установленных сроков, а его характеристики 
+        не соответствовали ожиданиям.</p>
+        <p>По технических характеристикам микропроцессор 8008 во многом соответствовал 
+        предыдущей версии. Он производился по тому же 10-мкм техпроцессу и 
+        содержал 3500 транзисторов. Внутренний стек поддерживал 8 уровней, 
+        а объем памяти был 16 Кб. Тактовая частота оказалась ниже, чем у 4004, 
+        она составляла 500 кГц. По скорости 8-битный процессор Intel отставал 
+        от 4-битного. Разрядность шины была 8-бит. Процессор мог обратиться 
+        к 8 портам ввода и 24 портам вывода.</p>
+      </div>
+    </article>
+
+      <video width="50%" height="50%"
+        poster="https://funik.ru/wp-content/uploads/2018/10/17478da42271207e1d86.jpg" 
+        controls preload="metadata" autoplay loop muted>
+      <source src="static/video/kitten.mp4" type="video/mp4">
+        Ваш браузер не поддерживает встроенные видео!
+      </video>
+  </main>
+
+  <!--Подвал-->
+  <footer>
+    <div id="footer">
+
+      <div class="form-div1">
+        <form method="get">
+          <fieldset class="form-fieldset">
+            <legend>Контактные данные</legend>
+            <div class="form-font">
+              <div class="form-item">
+                <label for="name">Введите имя:</label>
+                <input class="text-input" type="text" name="name" id="name" required>
+              </div>
+              <div class="form-item">
+                <label for="gender-select">Ваш пол:</label><br>
+                <select name="gender" id="gender-select" multiple size="3" required>
+                  <option value="" selected disabled>-- Выберите пол --</option>
+                  <option value="male">Мужчина</option>
+                  <option value="female">Женщина</option>
+                  <option value="unknown">Не определился</option>
+                </select>
+              </div>
+              <div class="form-item">
+                <label for="">Дата рождения:</label>
+                <input class="text-input" type="datetime-local" min="1922-01-01T00:00" max="2016-01-01T00:00" required>
+              </div>
+              <div class="form-item">
+                <label for="phone">Номер телефона:</label><br>
+                (<input class="text-fild" type="tel" name="tel1" pattern="[0-9]{3}" placeholder="***" size="1"/>) - 
+                <input class="text-fild" type="tel"  name="tel2" pattern="[0-9]{3}" placeholder="***" size="1"/> -
+                <input class="text-fild" type="tel" name="tel3" pattern="[0-9]{2}" placeholder="**" size="1"/>-
+                <input class="text-fild" type="tel" name="tel4" pattern="[0-9]{2}" placeholder="**" size="1"/>
+              </div>
+              <div class="form-item">
+                <div>Добавить файл:</div>
+                <input type="radio" id="foto" name="add" value="foto" checked>
+                <label for="foto">фотография</label><br>
+                <input type="radio" id="pas" name="add" value="pas">
+                <label for="pas">паспорт</label><br>
+                <input type="radio" id="ather" name="add" value="ather">
+                <label for="ather">другой документ</label>
+                <input type="file" name="" id="" required>
+              </div>
+              <div class="form-item">
+                <input type="submit" required>
+              </div>
+            </div>
+          </fieldset>
+        </form> 
+      </div>
+
+      <div class="form-div2">
+        <form method="get">
+          <fieldset class="form-fieldset">
+            <legend>Вход в аккаунт</legend>
+            <div class="form-font">
+              <div class="form-item">
+                <label for="email">Введите email:</label>
+                <input class="text-input" type="email" name="email" id="email" required>
+              </div>
+              <div class="form-item">
+                <label for="">Введите пароль:</label>
+                <input class="text-input" type="password" required>
+              </div>
+              <div class="form-item">
+                <label>Сохранить данные <input type="checkbox" name="save"></label>
+              </div>
+              <div class="form-item">
+                <input type="submit" required>
+              </div>
+            </div>
+          </fieldset>
+        </form> 
+        
+
+        <form method="post">
+          <fieldset class="form-fieldset">
+            <legend>Добавить отзыв</legend>
+            <div class="form-font">
+              <div class="form-item-review">
+                <label for="review">Отзыв:</label>
+              </div>
+              <div class="form-item">
+              <textarea class="text-fild" id="review" cols="45" rows="6" maxlegth="1000" minlength="20" placeholder="........" required></textarea>
+              </div>
+              <button type="submit">Отправить</button>
+            </div>
+          </fieldset>
+        </form> 
+      </div>
+      
+    </div>
+  </footer>
+  
+  </div>
+</body>
+</html>

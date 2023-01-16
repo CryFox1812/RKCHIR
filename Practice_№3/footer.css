@@ -1,0 +1,34 @@
+/* Подвал */
+    
+#footer {
+    height:80px;
+    background-color: #000000;
+}
+
+#footer address {
+    color: #b0b0b0;
+}
+    
+.fon {
+    float:left;
+    margin:20px 0 0 20px;
+}
+  
+.mail {
+    float:left;
+    margin:20px 0 0 60px;
+}
+
+.addr_link {
+    text-decoration: none;
+}
+
+.addr_link:link {
+    color:#dcdcdc; 
+}
+.addr_link:visited {
+    color:#4f4f4f;
+}
+.addr_link:active {
+    color:#ff9900;
+}

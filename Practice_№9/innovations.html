@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Modern processors</title>
+
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/header.css">
+  <link rel="stylesheet" href="static/css/cards.css">
+  <link rel="stylesheet" href="static/css/social_network.css">
+  
+  <script defer src="static/js/change_href.js"></script>
+  <script defer src="static/js/header_load.js"></script>
+  <script defer src="static/js/footer_load.js"></script>
+  <script defer src="static/js/likes.js"></script>
+  <script defer src="static/js/drawing.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!--Header and card's info-->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <!--Card's name-->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+
+  <canvas></canvas>
+  <div class="draw"><img src="static/img/spray-paint.png"></div>
+  
+    <article>
+      <ul class="cards">
+        <li>
+          <div class="card">
+            <img class="card_image" src="static/img/cards/cpu_1.jpeg"/>
+            <div class="img_bluer"></div>
+            <div class="card_overlay">
+              <div class="card_header">
+                <div class="card_ui">
+                  <div class="like">
+                    <img class="default" src="static/img/cards/heart.png"/>
+                    <img class="hover" src="static/img/cards/favourite.png"/>
+                    <div class="likes_num">0</div>
+                  </div>
+                </div>
+                <div class="card_icon">
+                  <img class="amd" src="static/img/cards/amd_.png"/>
+                </div>
+                <div>
+                  <h3 class="card_title">Ryzen 9 7950X</h3>
+                  <span class="card_cost">$699</span>
+                </div>
+              </div>
+              <span class="card_description">
+                <div>
+                  <span class="d_pink">Cores</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">Threads - </span>
+                  <span class="d_white">16</span>
+                  <span class="d_pink">/</span>
+                  <span class="d_white">32</span>
+                </div>
+                <div>
+                  <span class="d_pink">Default TDP - </span>
+                  <span class="d_white">170 W</span>
+                </div>
+                <div>
+                  <span class="d_pink">Base</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">Boost Clock - </span>
+                  <span class="d_white">4.5</span>
+                  <span class="d_pink">/</span>
+                  <span class="d_white">5.7 GHz</span>
+                </div>
+                <div>
+                  <span class="d_pink">L2</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">L3 Cache - </span>
+                  <span class="d_white">16</span>
+                  <span class="d_pink">/</span>
+                  <span class="d_white">64 MB</span>
+                </div>
+                <span class="d_date">
+                  <span class="d_white">Launch Date - </span>
+                  <span class="d_pink">9</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">27</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">2022</span>
+                </span>
+              </span>
+            </div>
+          </a>      
+        </li>
+        <li>
+          <div class="card">
+            <img class="card_image" src="static/img/cards/cpu_2.jpg"/>
+            <div class="img_bluer"></div>
+            <div class="card_overlay">        
+              <div class="card_header"> 
+                <div class="card_ui">
+                  <div class="like">
+                    <img class="default" src="static/img/cards/heart.png"/>
+                    <img class="hover" src="static/img/cards/favourite.png"/>
+                    <div class="likes_num">0</div>
+                  </div>
+                </div>
+                <div class="card_icon">
+                  <img class="amd" src="static/img/cards/amd_.png"/>
+                </div>
+                <div>
+                  <h3 class="card_title">Ryzen 9 7900X</h3>
+                  <span class="card_cost">$549</span>
+                </div>
+              </div>
+              <span class="card_description">
+                <div>
+                  <span class="d_pink">Cores</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">Threads - </span>
+                  <span class="d_white">12</span>
+                  <span class="d_pink">/</span>
+                  <span class="d_white">24</span>
+                </div>
+                <div>
+                  <span class="d_pink">Default TDP - </span>
+                  <span class="d_white">170 W</span>
+                </div>
+                <div>
+                  <span class="d_pink">Base</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">Boost Clock - </span>
+                  <span class="d_white">4.7</span>
+                  <span class="d_pink">/</span>
+                  <span class="d_white">5.6 GHz</span>
+                </div>
+                <div>
+                  <span class="d_pink">L2</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">L3 Cache - </span>
+                  <span class="d_white">12</span>
+                  <span class="d_pink">/</span>
+                  <span class="d_white">64 MB</span>
+                </div>
+                <span class="d_date">
+                  <span class="d_white">Launch Date - </span>
+                  <span class="d_pink">9</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">27</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">2022</span>
+                </span>
+              </span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <div class="card">
+            <img class="card_image" src="static/img/cards/cpu_3.jpg"/>
+            <div class="img_bluer"></div>
+            <div class="card_overlay">
+              <div class="card_header">
+                <div class="card_ui">
+                  <div class="like">
+                    <img class="default" src="static/img/cards/heart.png"/>
+                    <img class="hover" src="static/img/cards/favourite.png"/>
+                    <div class="likes_num">0</div>
+                  </div>
+                </div>
+                <div class="card_icon">
+                  <img class="amd" src="static/img/cards/amd_.png"/>
+                </div>
+                <div>
+                  <h3 class="card_title">Ryzen 7 7700X</h3>
+                  <span class="card_cost">$399</span>
+                </div>
+              </div>
+              <span class="card_description">
+                <div>
+                  <span class="d_pink">Cores</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">Threads - </span>
+                  <span class="d_white">8</span>
+                  <span class="d_pink">/</span>
+                  <span class="d_white">16</span>
+                </div>
+                <div>
+                  <span class="d_pink">Default TDP - </span>
+                  <span class="d_white">105 W</span>
+                </div>
+                <div>
+                  <span class="d_pink">Base</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">Boost Clock - </span>
+                  <span class="d_white">4.5</span>
+                  <span class="d_pink">/</span>
+                  <span class="d_white">5.4 GHz</span>
+                </div>
+                <div>
+                  <span class="d_pink">L2</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">L3 Cache - </span>
+                  <span class="d_white">8</span>
+                  <span class="d_pink">/</span>
+                  <span class="d_white">32 MB</span>
+                </div>
+                <span class="d_date">
+                  <span class="d_white">Launch Date - </span>
+                  <span class="d_pink">9</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">27</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">2022</span>
+                </span>
+              </span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <div class="card">
+            <img class="card_image" src="static/img/cards/cpu_4.jpg"/>
+            <div class="img_bluer"></div>
+            <div class="card_overlay">
+              <div class="card_header">
+                <div class="card_ui">
+                  <div class="like">
+                    <img class="default" src="static/img/cards/heart.png"/>
+                    <img class="hover" src="static/img/cards/favourite.png"/>
+                    <div class="likes_num">0</div>
+                  </div>
+                </div>
+                <div class="card_icon">
+                  <img class="amd" src="static/img/cards/amd_.png"/>
+                </div>
+                <div>
+                  <h3 class="card_title">Ryzen 5 7600X</h3>
+                  <span class="card_cost">$299</span>
+                </div>          
+              </div>
+              <span class="card_description">
+                <div>
+                  <span class="d_pink">Cores</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">Threads - </span>
+                  <span class="d_white">6</span>
+                  <span class="d_pink">/</span>
+                  <span class="d_white">12</span>
+                </div>
+                <div>
+                  <span class="d_pink">Default TDP - </span>
+                  <span class="d_white">105 W</span>
+                </div>
+                <div>
+                  <span class="d_pink">Base</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">Boost Clock - </span>
+                  <span class="d_white">4.7</span>
+                  <span class="d_pink">/</span>
+                  <span class="d_white">5.3 GHz</span>
+                </div>
+                <div>
+                  <span class="d_pink">L2</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">L3 Cache - </span>
+                  <span class="d_white">6</span>
+                  <span class="d_pink">/</span>
+                  <span class="d_white">32 MB</span>
+                </div>
+                <span class="d_date">
+                  <span class="d_white">Launch Date - </span>
+                  <span class="d_pink">9</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">27</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">2022</span>
+                </span>
+              </span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <div class="card">
+            <img class="card_image" src="static/img/cards/cpu_1.jpeg"/>
+            <div class="img_bluer"></div>
+            <div class="card_overlay">
+              <div class="card_header">
+                <div class="card_ui">
+                  <div class="like">
+                    <img class="default" src="static/img/cards/heart.png"/>
+                    <img class="hover" src="static/img/cards/favourite.png"/>
+                    <div class="likes_num">0</div>
+                  </div>
+                </div>
+                <div class="card_icon">
+                  <img class="intel" src="static/img/cards/intel_.png"/>
+                </div>
+                <div>
+                  <h3 class="card_title">Core i9-13900K</h3>
+                  <span class="card_cost">$599</span>
+                </div>
+              </div>
+              <span class="card_description">
+                <div>
+                  <span class="d_pink">Cores</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">Threads - </span>
+                  <span class="d_white">24</span>
+                  <span class="d_pink">/</span>
+                  <span class="d_white">32</span>
+                </div>
+                <div>
+                  <span class="d_pink">Default TDP - </span>
+                  <span class="d_white">? W</span>
+                </div>
+                <div>
+                  <span class="d_pink">Base</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">Boost Clock - </span>
+                  <span class="d_white">3.0</span>
+                  <span class="d_pink">/</span>
+                  <span class="d_white">5.8 GHz*</span>
+                </div>
+                <div>
+                  <span class="d_pink">L2</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">L3 Cache - </span>
+                  <span class="d_white">32</span>
+                  <span class="d_pink">/</span>
+                  <span class="d_white">36 MB</span>
+                </div>
+                <span class="d_date">
+                  <span class="d_white">Launch Date - </span>
+                  <span class="d_pink">9</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">27</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">2022</span>
+                </span>
+              </span>
+            </div>
+          </a>      
+        </li>
+        <li>
+          <div class="card">
+            <img class="card_image" src="static/img/cards/cpu_2.jpg"/>
+            <div class="img_bluer"></div>
+            <div class="card_overlay">        
+              <div class="card_header"> 
+                <div class="card_ui">
+                  <div class="like">
+                    <img class="default" src="static/img/cards/heart.png"/>
+                    <img class="hover" src="static/img/cards/favourite.png"/>
+                    <div class="likes_num">0</div>
+                  </div>
+                </div>
+                <div class="card_icon">
+                  <img class="intel" src="static/img/cards/intel_.png"/>
+                </div>
+                <div>
+                  <h3 class="card_title">Core i7-13700K</h3>
+                  <span class="card_cost">$419</span>
+                </div>
+              </div>
+              <span class="card_description">
+                <div>
+                  <span class="d_pink">Cores</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">Threads - </span>
+                  <span class="d_white">16</span>
+                  <span class="d_pink">/</span>
+                  <span class="d_white">24</span>
+                </div>
+                <div>
+                  <span class="d_pink">Default TDP - </span>
+                  <span class="d_white">? W</span>
+                </div>
+                <div>
+                  <span class="d_pink">Base</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">Boost Clock - </span>
+                  <span class="d_white">3.4</span>
+                  <span class="d_pink">/</span>
+                  <span class="d_white">5.4 GHz*</span>
+                </div>
+                <div>
+                  <span class="d_pink">L2</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">L3 Cache - </span>
+                  <span class="d_white">24</span>
+                  <span class="d_pink">/</span>
+                  <span class="d_white">30 MB</span>
+                </div>
+                <span class="d_date">
+                  <span class="d_white">Launch Date - </span>
+                  <span class="d_pink">9</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">27</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">2022</span>
+                </span>
+              </span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <div class="card">
+            <img class="card_image" src="static/img/cards/cpu_3.jpg"/>
+            <div class="img_bluer"></div>
+            <div class="card_overlay">
+              <div class="card_header">
+                <div class="card_ui">
+                  <div class="like">
+                    <img class="default" src="static/img/cards/heart.png"/>
+                    <img class="hover" src="static/img/cards/favourite.png"/>
+                    <div class="likes_num">0</div>
+                  </div>
+                </div>
+                <div class="card_icon">
+                  <img class="intel" src="static/img/cards/intel_.png"/>
+                </div>
+                <div>
+                  <h3 class="card_title">Core i5-13600K</h3>
+                  <span class="card_cost">$329</span>
+                </div>
+              </div>
+              <span class="card_description">
+                <div>
+                  <span class="d_pink">Cores</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">Threads - </span>
+                  <span class="d_white">14</span>
+                  <span class="d_pink">/</span>
+                  <span class="d_white">20</span>
+                </div>
+                <div>
+                  <span class="d_pink">Default TDP - </span>
+                  <span class="d_white">? W</span>
+                </div>
+                <div>
+                  <span class="d_pink">Base</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">Boost Clock - </span>
+                  <span class="d_white">3.5</span>
+                  <span class="d_pink">/</span>
+                  <span class="d_white">5.1 GHz*</span>
+                </div>
+                <div>
+                  <span class="d_pink">L2</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">L3 Cache - </span>
+                  <span class="d_white">20</span>
+                  <span class="d_pink">/</span>
+                  <span class="d_white">24 MB</span>
+                </div>
+                <span class="d_date">
+                  <span class="d_white">Launch Date - </span>
+                  <span class="d_pink">9</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">27</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">2022</span>
+                </span>
+              </span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <div class="card">
+            <img class="card_image" src="static/img/cards/cpu_4.jpg"/>
+            <div class="img_bluer"></div>
+            <div class="card_overlay">
+              <div class="card_header">
+                <div class="card_ui">
+                  <div class="like">
+                    <img class="default" src="static/img/cards/heart.png"/>
+                    <img class="hover" src="static/img/cards/favourite.png"/>
+                    <div class="likes_num">0</div>
+                  </div>
+                </div>
+                <div class="card_icon">
+                  <img class="intel" src="static/img/cards/intel_.png"/>
+                </div>
+                <div>
+                  <h3 class="card_title">Core i9-12900K</h3>
+                  <span class="card_cost">$658</span>
+                </div>          
+              </div>
+              <span class="card_description">
+                <div>
+                  <span class="d_pink">Cores</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">Threads - </span>
+                  <span class="d_white">16</span>
+                  <span class="d_pink">/</span>
+                  <span class="d_white">24</span>
+                </div>
+                <div>
+                  <span class="d_pink">Default TDP - </span>
+                  <span class="d_white">? W</span>
+                </div>
+                <div>
+                  <span class="d_pink">Base</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">Boost Clock - </span>
+                  <span class="d_white">3.2</span>
+                  <span class="d_pink">/</span>
+                  <span class="d_white">5.2 GHz*</span>
+                </div>
+                <div>
+                  <span class="d_pink">L2</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">L3 Cache - </span>
+                  <span class="d_white">14</span>
+                  <span class="d_pink">/</span>
+                  <span class="d_white">30 MB</span>
+                </div>
+                <span class="d_date">
+                  <span class="d_white">Launch Date - </span>
+                  <span class="d_pink">10</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">4</span>
+                  <span class="d_white">/</span>
+                  <span class="d_pink">2021</span>
+                </span>
+              </span>
+            </div>
+          </a>
+        </li>    
+      </ul>
+
+    </article>
+
+  </main>
+</body>
+</html>

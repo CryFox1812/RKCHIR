@@ -1,0 +1,87 @@
+/* Подвал */
+    
+#footer 
+{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    background-color: #000000;
+    color: rgb(212, 212, 212);
+    justify-content: space-evenly;
+}
+@media (orientation: portrait)
+{
+    #footer 
+    {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.form-font
+{
+    font-family: 'Nunito', sans-serif;
+}
+
+.form-div1, .form-div2
+{
+    width: 45%;
+}
+@media (orientation: portrait)
+{
+    .form-div1, .form-div2
+    {
+        width: 93%;
+        font-size: 1.5em;
+    }
+}
+
+.mer
+{
+    margin: 10px;
+}
+
+.form-fieldset
+{
+    padding: 1rem;
+}
+
+.form-item
+{
+    margin-bottom: 1rem;
+}
+.form-item-review
+{
+    margin-bottom: 2.2ch;
+}
+
+.text-fild
+{
+    color: #212529;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+}
+
+.text-input
+{
+    line-height: 1.5;
+    color: #212529;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+}
+
+.text-input:focus
+{
+    box-shadow: 0 0 0 0.1rem rgba(255, 162, 0, 0.751);
+}
+
+.submit
+{
+    margin-left: 81%;
+}
+
+textarea::placeholder
+{
+    font-size: 75%;
+    color: #212529;
+    opacity: 0.4;
+}

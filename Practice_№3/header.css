@@ -1,0 +1,46 @@
+/* Шапка сайта */
+    
+header {
+    position: sticky; /* ! */
+    top: 0;
+}
+
+nav {
+    background-color: #000000;
+    padding: 15px; /* ! */
+}
+
+nav img {
+    position: absolute; /* ! */  /* ! */
+    display: inline; /* ! */
+    width: 3%; /* ! */
+    margin-left: 10px; /* ! */
+    margin-right: 90px; /* ! */
+}
+
+.nav_menu {
+    position: relative; /* ! */  /* ! */
+    left: 20%;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none; /* ! */
+    font-family: 'Quicksand', sans-serif;
+    font-size: 125%; 
+    
+    display: inline; /* ! */
+    margin: 0 7%; /* ! */
+
+    vertical-align: middle;
+}
+
+.nav_home:hover {
+    text-shadow: 2px 2px 1px #C00151
+}
+.nav_history:hover {
+    text-shadow: 2px 2px 1px #BCC001
+}
+.nav_innovations:hover {
+    text-shadow: 2px 2px 1px #01bdc0
+}

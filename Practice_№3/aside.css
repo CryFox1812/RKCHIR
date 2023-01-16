@@ -1,0 +1,40 @@
+/* Сайдбар (колонка справа) */
+
+
+#sidebar{
+    position: fixed; /* ! */
+    background-color: #000000;
+    width: 180px;
+    margin-top: 3px;
+    padding: 10px;
+}
+
+#sidebar > h3{
+  text-align: center;
+  font-size: 100%;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+}
+
+h3 + hr{
+    background-color: #7371fc;
+    width: 70px;
+    height: 0.01px;
+}
+
+#sidebar ul{
+    margin-left: 0;
+    padding-left: 0; 
+}
+
+#sidebar li{
+    list-style-type: none; /* ! */
+    text-align: center;
+    font-size: 100%;
+}
+
+li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}

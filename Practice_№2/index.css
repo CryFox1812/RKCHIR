@@ -1,0 +1,14 @@
+body{
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  #wrapper{
+    width: 900px;
+    margin: 0 auto;
+    padding: 5px;
+    background:#dedede;
+  }

@@ -1,0 +1,322 @@
+:root {
+  --main_color: #7a88ff;
+  --black_color: #151515;
+  --hover_color: #ff5757;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #202020;
+  font-family: "Krub", sans-serif;
+}
+
+.back
+{
+  position: absolute;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+
+}
+.back img
+{
+  width: 100%;
+  height: 100%;
+
+  rotate: 90deg;
+  transition: .5s;
+}
+.back:hover img
+{
+  scale: 0.6;
+  rotate: 0deg;
+}
+
+.profile 
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+  width: calc(50vw);
+  min-width: 250px;
+  max-width: 500px;
+  height: 500px;
+
+  border-radius: 10px;
+  box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
+  background: var(--black_color);
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top_line 
+{
+  position: relative;
+
+  width: 100%;
+  height: 120px;
+  background: var(--main_color);
+  animation: dsTop 1.5s;
+}
+@keyframes dsTop {
+  0% {
+    top: -150px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.avatar 
+{
+  position: relative;
+
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-top: -50px;
+
+  box-shadow: 0 0 0px 2px var(--main_color), 0 0 0 12px var(--black_color);
+  overflow: hidden;
+  animation: mvTop 2s;
+  transition: 0.3s;
+}
+@keyframes mvTop {
+  0% {
+    top: -150px;
+  }
+  100% {
+    top: 0;
+  }
+}
+.avatar:hover
+{
+  margin-top: -60px;
+  margin-bottom: 10px;
+  scale: 1.1;
+  box-shadow: 0 0 0px 2px var(--hover_color), 0 0 0 12px var(--black_color);
+}
+
+.avatar img 
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name 
+{
+  margin-top: 25px;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  animation: fadeIn 2s ease-in;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.info 
+{
+  margin-top: 15px;
+  display: flex;
+}
+.info .item
+{
+  position: relative;
+
+  width: calc(30vw / 3);
+  min-width: 65px;
+  max-width: 130px;
+  padding: 20px 0;
+  border-radius: 5px;
+
+  text-align: center;
+  color: white;
+  animation: fadeInMove ease-out;
+  transition: 0.3s ease-out;
+}
+@keyframes fadeInMove {
+  0% {
+    opacity: 0;
+    left: 1000px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+.info .item:nth-of-type(3) 
+{
+  animation-duration: 2.3s;
+}
+.info .item:nth-of-type(2) 
+{
+  animation-duration: 2s;
+}
+.info .item:nth-of-type(1) 
+{
+  animation-duration:  1.5s;
+}
+
+.info .item h6
+{
+  text-transform: uppercase;
+  color: var(--main_color);
+}
+.info .item:hover h6
+{
+  color: var(--hover_color);
+}
+.info .item p
+{
+  font-size: 12px;
+  margin-top: 5px;
+}
+.info .item:hover p
+{
+  scale: 1.2;
+}
+
+.prefer
+{
+  margin-top: 15px;
+  width: 200px;
+  height: 100px;
+} 
+.prefer .title
+{
+  position: relative;
+
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--main_color);
+  animation: mvBottom 1s ease-out;
+}
+@keyframes mvBottom {
+  0% {
+    left: -100px;
+    opacity: 0;
+  }
+  100% {
+    left: 0%;
+    opacity: 1;
+  }
+}
+
+.prefer .item h6 
+{
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 8px;
+  letter-spacing: 0.07em;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  color: white;
+  animation: mvBot 2s ease-out;
+}
+@keyframes mvBot {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.prefer .item .bar 
+{
+  height: 5px;
+  border-radius: 5px;
+  background: var(--main_color);
+  text-align: right;
+}
+.prefer .item .bar:hover 
+{
+  background: var(--hover_color);
+}
+
+.prefer .item:nth-of-type(1) 
+{
+  width: 90%;
+  animation: htmlSkill 1s;
+}
+@keyframes htmlSkill {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
+.prefer .item:nth-of-type(2) 
+{
+  width: 45%;
+  animation: cssSkill 2s;
+}
+@keyframes cssSkill {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 45%;
+  }
+}
+.prefer .item:nth-of-type(3) 
+{
+  width: 15%;
+  animation: jsSkill 3s;
+}
+@keyframes jsSkill {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 15%;
+  }
+}
+
+.prefer .item .bar p 
+{
+  color: white;
+  font-size: 8px;
+  padding-top: 7px;
+
+  animation: fadeIn 5s;
+  transition: 0.1s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.prefer .item .bar:hover p 
+{ 
+  font-size: 0.65em;
+}

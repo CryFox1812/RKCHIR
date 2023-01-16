@@ -1,0 +1,12 @@
+body{
+  background-color: #1e1e1e;
+  margin: 0;
+}
+article {
+  padding: 50px;
+  padding-top: 100px;
+}
+li a {
+  color: #ffffff;
+  text-decoration: none;
+}

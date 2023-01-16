@@ -1,0 +1,115 @@
+/* Контент (статья) */
+  
+#content{ /* Блок контента */
+    margin-bottom: 5px; /* Отступ блока статьи от блока подвала */
+    width: 676px; /* Ширина статьи */
+    padding: 10px; /* Отступ текста от краёв блока */
+    background: #ffffff; /* Фон статьи */
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.5) 0px 1px 3px;
+}
+  
+.clear{ /* Запрет наплывания. Устанавливается для того, чтобы блок контента, при заполнении текстом и изображениями не наплывал на подвал */
+    clear: both;
+}
+
+.cards__col {
+  width: 40%;
+  height: 400px;
+}
+
+.card {
+  position: relative;
+  background: #ffd29c;
+  border-radius: 25px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card__image {
+  height: 40%;
+}
+
+.card__image img {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.card__body {
+  background: #f2e7ff;
+  padding: 30px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.card__title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.card__text {
+  text-align: center;
+  font-size: 80%;
+  flex: 1;
+
+  overflow: hidden; /* Обрезаем все, что не помещается в область */
+  text-overflow: ellipsis; /* Добавляем многоточие */
+}
+
+.card__bottom {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.card__price {
+  font-size: 20px;
+  text-align: center;
+  flex: 1;
+}
+
+.card__price span {
+  color: #7371fc;
+}
+
+.card__button {
+  text-align: center;
+  flex: 0;
+}
+
+.card__button a {
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #7371fc;
+  font-size: 16px;
+  padding: 0 24px;
+  text-decoration: none;
+  position: relative;
+  border: 1px solid #7371fc;
+  border-radius: 48px;
+  transition: 0.4s;
+}
+
+.card__button a:hover {
+  padding: 0 34px;
+}
+
+@media (max-width: 991.98px) {
+.cards__col {
+  width: 50%;
+}
+}
+@media (max-width: 767.98px) {
+.cards__col {
+  width: 100%;
+}
+}

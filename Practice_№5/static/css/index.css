@@ -1,0 +1,33 @@
+body{
+  /*
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  */
+  background-color: #020202;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#wrapper{
+    width: 65%;
+    margin: 0 auto;
+    padding: 3px;
+    background:#171717;
+}
+@media screen and (max-width: 1200px)
+{
+  #wrapper
+  {
+    width: 99%;
+  }
+}
+
+
+  iframe
+  {
+    width: 50%;
+    height: 250px;
+    margin-left: 25%;
+  }

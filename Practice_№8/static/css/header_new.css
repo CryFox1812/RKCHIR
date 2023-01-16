@@ -1,0 +1,86 @@
+.header {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    z-index: 10;
+    background-color: black;
+}
+
+.top_nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_img
+{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    height: 34px;
+    padding-left: 2.5%;
+}
+
+.nav_img img
+{
+    height: 100%;
+    transition: 10s linear;  
+}
+
+.nav_img img:hover
+{
+    margin-left: 95%;
+}
+
+.menu {
+    padding: 0;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+.menu a {
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.menu a::after {
+    position: absolute;
+    content: "";
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.menu a:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+.menu .nav_home::after {
+    background: #ffffff;
+}
+.menu .nav_home:hover{
+    color: #ffa5a3;
+}
+.menu .nav_home:hover .nav_o{
+    color: #88cbff;
+}
+.menu .nav_history::after {
+    background: #5bb8ff;
+}
+.menu .nav_history:hover {
+    color: #88cbff;
+}
+.menu .nav_innovations::after {
+    background: #ff8e8c;
+}
+.menu .nav_innovations:hover {
+    color: #ffa5a3;
+}

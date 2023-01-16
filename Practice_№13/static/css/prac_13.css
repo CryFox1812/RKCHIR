@@ -1,0 +1,161 @@
+.href
+{
+  font-size: large;
+  color: white;
+  margin-top: 500px;
+  padding-bottom: 500px;
+}
+
+a
+{
+  color: wheat
+}
+
+
+
+.container
+{
+  position: relative;
+}
+
+.container .large
+{
+  overflow: hidden;
+  
+  width: calc(20vw + 16px);
+  height: calc(20vw + 16px);
+  margin-bottom: 4px;
+}
+
+.container .small
+{
+  overflow: hidden;
+  display:inline-block;
+
+  width: calc(20vw / 5);
+  height: calc(20vw / 5);
+}
+
+.container img 
+{
+  object-fit: contain;
+  width: inherit;
+}
+
+.list
+{
+  color: rgb(56, 135, 135);
+  user-select: none;
+}
+
+.item
+{
+  width: 100px;
+  background-color: #3d3d3d;
+  margin-bottom: 2px;
+}
+
+.selected
+{
+  color: aquamarine;
+}
+
+.range {
+  -webkit-appearance: none;
+  background: rgb(20, 20, 20);
+  border-radius: 15px;
+
+  box-shadow: inset 0 0 5px rgb(0, 0, 0);
+}
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 15px;
+
+  background: rgb(0, 0, 0);
+  cursor: pointer;
+
+  border: 2px solid rgb(167, 148, 148);
+}
+
+
+
+.cart
+{
+  width: 100px;
+  height: 50px;
+  background-color: coral;
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards 
+{
+  width: calc(10vw);
+  list-style: none;
+}
+
+.card 
+{
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #dff2ef;
+}
+
+
+.cart
+{
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(240 219 255);
+  transform-style: preserve-3d;
+}
+
+.cost,
+.count
+{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+.cost
+{
+  color: rgb(240 219 255);
+  background: #b25fd2;
+}
+
+.count
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+  color: #c126ff;
+  background: rgb(209, 157, 246);
+}
+
+.point
+{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #abc232;
+}

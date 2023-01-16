@@ -1,0 +1,32 @@
+/* Подвал */
+    
+#footer{ /* Блок подвала */
+    height:80px; /* Высота блока подвала */
+    background-color: #ffffff; /* Фон блока подвала */
+    border-radius: 5px; /* Закруглённые углы */
+    box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Тень блока */
+}
+    
+.fon{ /* Номер телефона */
+    float:left;
+    margin:20px 0 0 20px;
+}
+  
+.mail{ /* Адрес E-mail */
+    float:left;
+    margin:20px 0 0 60px;
+}
+
+.addr_link {
+    text-decoration: none;
+}
+
+.addr_link:link {
+    color:#000000; 
+}
+.addr_link:visited {
+    color:#4f4f4f;
+}
+.addr_link:active {
+    color:#ff9900;
+}

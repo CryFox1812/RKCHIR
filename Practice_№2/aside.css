@@ -1,0 +1,42 @@
+/* Сайдбар (колонка справа) */
+    
+#sidebar{ /* Блок сайдбара */
+    background-color: #ffffff; /* Фон блока */
+    width: 180px; /* Ширина блока */
+    padding: 10px; /* Отступ текста от краёв */
+    float: right; /* Размещаем блок справа от других элементов, наплывание или обтекание справа). Если делать сайдбар слева, то значение right меняем на left */
+    border-radius: 5px; /* Закругляем углы блока */
+    box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Задаём блоку тень */
+}
+
+#sidebar > h3{
+  text-align: center;
+  font-size: 100%;
+}
+
+h3 + hr{
+    background-color: #7371fc;
+    width: 70px;
+    height: 0.01px;
+}
+
+#sidebar ul{
+    margin-left: 0;
+    padding-left: 0; 
+}
+
+#sidebar li{
+    list-style-type: none; /* Убирает маркеры */
+    text-align: center;
+    font-size: 100%;
+}
+
+li a{
+    color: #030303;
+    text-decoration: none;
+}
+
+.marcer{ /* Галочки маркеры меню */
+    float: left; /* Размещаем слева от текста */
+    margin: 5px 5px 0 0; /* Двигаются вверх-вправо-вниз-влево */
+}

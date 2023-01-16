@@ -1,0 +1,52 @@
+.social_network_container
+{
+  width: 100%;
+  height: 150%;
+  background-color: #121316;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social_network .icon:before,
+.social_network
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.social_network
+{
+  position: relative;
+  
+  overflow: hidden;
+  background-color: #1b1c20;
+  box-shadow: 0px 0px 15px 1px rgb(0 0 0 / 50%);
+}
+
+.social_network .icon:before
+{
+  content: '';
+  position: absolute;
+  top: -50px;
+
+  background: linear-gradient(140deg, #ffe700, #ff0000);
+
+  transition: 0.5s;
+}
+
+.social_network:hover .icon:before
+{
+  top: 0px;
+}
+
+.social_network .icon img
+{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 13px;
+  left: 13px;
+}

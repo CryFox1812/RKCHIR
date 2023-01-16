@@ -1,0 +1,51 @@
+/* Сайдбар (колонка справа) */
+
+
+#sidebar{
+    position: fixed; /* ! */
+    background-color:#171717;
+    width: 15%;
+    margin: 3px;
+    padding: 10px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#sidebar > h3{
+  text-align: center;
+  font-size: 100%;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+}
+
+h3 + hr{
+    background-color: #7371fc;
+    width: 70px;
+    height: 0.01px;
+}
+
+#sidebar ul{
+    margin-left: 0;
+    padding-left: 0; 
+}
+
+#sidebar li{
+    list-style-type: none; /* ! */
+    text-align: center;
+    font-size: 1em;
+}
+
+li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width: 1200px)
+{
+    #sidebar
+    {
+        visibility: hidden;
+    }
+}

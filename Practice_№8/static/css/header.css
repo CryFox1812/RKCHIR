@@ -1,0 +1,165 @@
+/* Шапка сайта */
+    
+/* Прилипание */
+header {
+    z-index: 100;
+    position: sticky;
+    top: 0;
+}
+
+.nav_home, 
+.nav_history, 
+.nav_innovations {
+    /*transition: .1s ease-in-out;*/
+}
+
+
+/* Цвет при наведении */
+.nav_home:hover {
+    position: relative;
+    top: -1px;
+    left: -1px;
+    text-shadow: 2px 2px 1px #C00151
+}
+.nav_history:hover {
+    position: relative;
+    top: -1px;
+    left: -1px;
+    text-shadow: 2px 2px 1px #BCC001
+}
+.nav_innovations:hover {
+    position: relative;
+    top: -1px;
+    left: -1px;
+    text-shadow: 2px 2px 1px #01bdc0
+}
+
+/* Флекс позиция картинки и текста */
+.top_nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    height: 50px;
+    padding: 0 25px;
+}
+/* Флекс позиция картинки и бургер-меню */
+@media (orientation: portrait) and (max-width: 1200px)
+{
+    .top_nav {
+        justify-content: space-between;
+    }
+}
+
+.nav_img img
+{
+    height: 34px;
+    margin-top: 5px;
+}
+
+/* Флекс позиция внутри меню */
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    padding-right: 34px;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu > li {
+    overflow: hidden;
+}
+.menu a {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em; 
+}
+/* Выпадающее меню */
+@media (orientation: portrait) and (max-width: 1200px)
+{
+    /* Основа */
+    .menu {
+        position: absolute;
+        top: 0;
+        padding: 0;
+        left: 48px;
+        width: 90%;
+        margin-top: 172px;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Свернутая */
+    #menu_toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+    /* Развернутая */
+    #menu_toggle:checked ~ .menu li {
+      border: 1px solid #171717;
+      height: 2.5em;
+      padding: 1.5em;
+    }
+    /* Флекс выпадающее меню */
+    .menu > li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #000;
+        font-size: 2em;
+    }
+}
+
+/* Иконка бургер-меню и привязанная к ней кнопка */
+#menu_toggle {
+    display: none;
+}  
+.menu_button_container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    align-items: center;
+}
+/* Флекс позиция иконки бургер-меню */
+@media (orientation: portrait) and (max-width: 1200px)
+{
+    .menu_button_container {
+        display: flex;
+    }
+}
+  
+/* Элементы иконки бургер-меню (отдельные палочки)*/
+.menu_button,
+.menu_button::before,
+.menu_button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 2px;
+    width: 30px;
+}
+.menu_button::before {
+    content: '';
+    margin-top: -8px;
+}
+.menu_button::after {
+    content: '';
+    margin-top: 8px;
+}
+
+/* Трансформация палочек в крестик*/
+#menu_toggle:checked + .menu_button_container .menu_button::before {
+    margin-top: 0px;
+    transform: rotate(45deg);
+}
+#menu_toggle:checked + .menu_button_container .menu_button {
+    background: #000000;
+}
+#menu_toggle:checked + .menu_button_container .menu_button::after {
+    margin-top: 0px;
+    transform: rotate(-45deg);
+}

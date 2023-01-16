@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Код блочного сайта</title>
+
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/header.css">
+  <link rel="stylesheet" href="static/css/article.css">
+  <link rel="stylesheet" href="static/css/cards.css">
+  <link rel="stylesheet" href="static/css/aside.css">
+  <link rel="stylesheet" href="static/css/footer.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--Оболочка страницы-->
+  <div id="wrapper"> 
+
+  <!--Шапка сайта-->
+  <header>
+    <nav class="top_nav">
+      <div class="nav_img">
+        <img src="static/img/chip.png">
+      </div>
+      <input id="menu_toggle" type="checkbox" />
+      <label class='menu_button_container' for="menu_toggle">
+      <div class='menu_button'></div>
+    </label>
+      <ul class="menu">
+        <li><a class="nav_home" href="home.html">home</a></li>
+        <li><a class="nav_history" href="history.html">history</a></li>
+        <li><a class="nav_innovations" href="innovations.html">innovations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!--Сайдбар-->
+    <aside>
+      <div id="sidebar">
+        <h3>Доп информация</h3>
+        <!--Прямая синяя линия-->
+        <hr>
+        <ul>
+          <li><a href="#"><h4>Раздел 1</h4></a></li>
+          <li><a href="#"><h4>Раздел 2</h4></a></li>
+          <li><a href="#"><h4>Раздел 3</h4></a></li>
+          <li><a href="#"><h4>Раздел 4</h4></a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!--Основной контент (статья)-->
+    <article>
+
+    </article>
+
+  </main>
+
+  <!--Подвал-->
+  <footer>
+    <div id="footer">
+
+      <div class="form-div1">
+        <form method="get">
+          <fieldset class="form-fieldset">
+            <legend>Контактные данные</legend>
+            <div class="form-font">
+              <div class="form-item">
+                <label for="name">Введите имя:</label>
+                <input class="text-input" type="text" name="name" id="name" required>
+              </div>
+              <div class="form-item">
+                <label for="gender-select">Ваш пол:</label><br>
+                <select name="gender" id="gender-select" multiple size="3" required>
+                  <option value="" selected disabled>-- Выберите пол --</option>
+                  <option value="male">Мужчина</option>
+                  <option value="female">Женщина</option>
+                  <option value="unknown">Не определился</option>
+                </select>
+              </div>
+              <div class="form-item">
+                <label for="">Дата рождения:</label>
+                <input class="text-input" type="datetime-local" min="1922-01-01T00:00" max="2016-01-01T00:00" required>
+              </div>
+              <div class="form-item">
+                <label for="phone">Номер телефона:</label><br>
+                (<input class="text-fild" type="tel" name="tel1" pattern="[0-9]{3}" placeholder="***" size="1"/>) - 
+                <input class="text-fild" type="tel"  name="tel2" pattern="[0-9]{3}" placeholder="***" size="1"/> -
+                <input class="text-fild" type="tel" name="tel3" pattern="[0-9]{2}" placeholder="**" size="1"/>-
+                <input class="text-fild" type="tel" name="tel4" pattern="[0-9]{2}" placeholder="**" size="1"/>
+              </div>
+              <div class="form-item">
+                <div>Добавить файл:</div>
+                <input type="radio" id="foto" name="add" value="foto" checked>
+                <label for="foto">фотография</label><br>
+                <input type="radio" id="pas" name="add" value="pas">
+                <label for="pas">паспорт</label><br>
+                <input type="radio" id="ather" name="add" value="ather">
+                <label for="ather">другой документ</label>
+                <input type="file" name="" id="" required>
+              </div>
+              <div class="form-item">
+                <input type="submit" required>
+              </div>
+            </div>
+          </fieldset>
+        </form> 
+      </div>
+
+      <div class="form-div2">
+        <form method="get">
+          <fieldset class="form-fieldset">
+            <legend>Вход в аккаунт</legend>
+            <div class="form-font">
+              <div class="form-item">
+                <label for="email">Введите email:</label>
+                <input class="text-input" type="email" name="email" id="email" required>
+              </div>
+              <div class="form-item">
+                <label for="">Введите пароль:</label>
+                <input class="text-input" type="password" required>
+              </div>
+              <div class="form-item">
+                <label>Сохранить данные <input type="checkbox" name="save"></label>
+              </div>
+              <div class="form-item">
+                <input type="submit" required>
+              </div>
+            </div>
+          </fieldset>
+        </form> 
+        
+
+        <form method="post">
+          <fieldset class="form-fieldset">
+            <legend>Добавить отзыв</legend>
+            <div class="form-font">
+              <div class="form-item-review">
+                <label for="review">Отзыв:</label>
+              </div>
+              <div class="form-item">
+              <textarea class="text-fild" id="review" cols="45" rows="6" maxlegth="1000" minlength="20" placeholder="........" required></textarea>
+              </div>
+              <button type="submit">Отправить</button>
+            </div>
+          </fieldset>
+        </form> 
+      </div>
+      
+    </div>
+  </footer>
+  
+  </div>
+</body>
+</html>

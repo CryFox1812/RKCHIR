@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Код блочного сайта</title>
+
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="cards.css">
+  <link rel="stylesheet" href="aside.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+  <!--Оболочка страницы-->
+  <div id="wrapper"> 
+
+  <!--Шапка сайта-->
+  <header>
+    <div id="header">
+      <nav>
+          <img src="img.png">
+          <a href="#">Home</a>
+          <a href="#">History</a>
+          <a href="#">Innovations</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!--Сайдбар-->
+    <aside>
+      <div id="sidebar">
+        <h3>Доп информация</h3>
+        <!--Прямая синяя линия-->
+        <hr>
+        <ul>
+          <li><a href="#"><h4>Раздел 1</h4></a></li>
+          <li><a href="#"><h4>Раздел 2</h4></a></li>
+          <li><a href="#"><h4>Раздел 3</h4></a></li>
+          <li><a href="#"><h4>Раздел 4</h4></a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!--Основной контент (статья)-->
+    <article>
+      <div id="content">
+        <section>
+          <div class="cards__col">
+          <div class="card">
+              <div class="card__image"><img src="proc.jpg"/></div>
+              <div class="card__body">
+              <div class="card__title">core i9 13900k</div>
+              <div class="card__text">Десктопный процессор Intel для сокета LGA-1700. 24 ядра, 32 потока, 3300 МГц базовая частота, разгон до 5500 МГц. Интегрированная графика Intel UHD Graphics 770, размер кэша 3-го уровня 68 МБ.</div>
+              <div class="card__bottom">
+                  <div class="card__price"><span>$</span>725</div>
+                  <div class="card__button"><a href="#">Купить</a></div>
+              </div>
+              </div>
+          </div>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+  
+  <!--Запрет наплывания-->
+  <div class="clear"></div>
+
+  <!--Подвал-->
+  <footer>
+    <div id="footer">
+      <address class="fon">Телефон:<br><a class="addr_link" href="tel:01234567890">8(111)222-33-44</a></address>
+      <address class="mail">E-mail<br><a class="addr_link" href="mailto:address@gmail.com">address@gmail.com</a></address>
+
+    </div>
+  </footer>
+  
+  </div>
+</body>
+</html>

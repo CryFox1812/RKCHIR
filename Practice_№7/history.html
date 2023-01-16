@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Modern processors</title>
+
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/header.css">
+  <link rel="stylesheet" href="static/css/article.css">
+  <link rel="stylesheet" href="static/css/cards.css">
+  <link rel="stylesheet" href="static/css/aside.css">
+  <link rel="stylesheet" href="static/css/footer.css">
+  <link rel="stylesheet" href="static/css/button.css">
+  <link rel="stylesheet" href="static/css/notification.css">
+  <link rel="stylesheet" href="static/css/glassmorphism_cards.css">
+  <link rel="stylesheet" href="static/css/social_network.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--Оболочка страницы-->
+  <div id="wrapper"> 
+
+  <!--Шапка сайта-->
+  <header>
+    <nav class="top_nav">
+      <div class="nav_img">
+        <img src="static/img/cpu.png">
+      </div>
+      <input id="menu_toggle" type="checkbox" />
+      <label class='menu_button_container' for="menu_toggle">
+        <div class='menu_button'></div>
+      </label>
+      <ul class="menu">
+        <li><a class="nav_home" href="home.html">home</a></li>
+        <li><a class="nav_history" href="history.html">history</a></li>
+        <li><a class="nav_innovations" href="innovations.html">innovations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!--Основной контент (статья)-->
+    <article>
+
+      <h2>История развития процессоров: из 70-х в 90-е</h2>
+      <div class="text">
+        Центральный процессор представляет из себя сложную интегральную схему, 
+        которая является одним из ключевых составляющих элементов современного ПК.
+        Первые компьютеры появились примерно в 40-х годах прошлого века, 
+        работая на электромеханических реле и вакуумных лампах. 
+        Они обеспечивали функционирование первых вычислительных машин. 
+        В 60-х годах появились первые интегральные микросхемы которые 
+        на долгое время стали неотъемлемой частью любого вычислительного 
+        устройства. Началом эпохи современных CPU можно смело назвать 1971-й год.
+      </div>
+      <h3>Intel 4004</h3>
+      <img class="intel_4004" src="static/img/history/intel_4004.jpg">
+      <div class="text">
+        <p>Первым однокристальным микропроцессором считается 4-битный Intel 4004, 
+        вышедший 15 ноября 1971 года. Компания Intel только начинала свой путь 
+        становления и ее создатели, Роберт Нойс, Гордон Мур и Эндрю Гроув, 
+        потратили немало сил на процесс развития. Благодаря вкладу итальянского 
+        физика Федерико Фаджина, инженерам компании удалось разместить ключевые 
+        компоненты на один чип и создать микропроцессор 4004.</p>
+        <p>Intel 4004 производился по 10-мкм техпроцессу, насчитывал 2250 транзисторов 
+        и работал на частоте 108 кГц (проводил 92 600 операций в секунду). 
+        Частота синхронизации была 740 кГц. Объем памяти доходил до 4 Кб, 
+        разрядность шины — 4 бита. Площадь кристалла составляла 12 мм2.</p>
+      </div>   
+      <h3>Intel 8008</h3>
+      <img class="intel_8008" src="static/img/history/intel_4004.jpg">
+      <div class="text">
+        <p>В начале 70-х компания выпустила первый 8-битный центральный процессор 
+        Intel 8008. Он разрабатывался одновременно с 4004 под заказ для Computer 
+        Terminal Corporation (в последствии Datapoint). Но компания отказалась 
+        от CPU (как и от сотрудничества с Intel) из-за того, что процесс создания 
+        микросхемы вышел за пределы установленных сроков, а его характеристики 
+        не соответствовали ожиданиям.</p>
+        <p>По технических характеристикам микропроцессор 8008 во многом соответствовал 
+        предыдущей версии. Он производился по тому же 10-мкм техпроцессу и 
+        содержал 3500 транзисторов. Внутренний стек поддерживал 8 уровней, 
+        а объем памяти был 16 Кб. Тактовая частота оказалась ниже, чем у 4004, 
+        она составляла 500 кГц. По скорости 8-битный процессор Intel отставал 
+        от 4-битного. Разрядность шины была 8-бит. Процессор мог обратиться 
+        к 8 портам ввода и 24 портам вывода.</p>
+      </div>
+      
+      <div class="video_d">
+        <label class="video_d_label">Описание для видео</label>
+        <div class="video_description">Что-то про котика</div>
+        <video width="100%" height="100%"
+          poster="https://funik.ru/wp-content/uploads/2018/10/17478da42271207e1d86.jpg" 
+          controls preload="metadata" autoplay loop muted>
+        <source src="static/video/kitten.mp4" type="video/mp4">
+          Ваш браузер не поддерживает встроенные видео!
+        </video>
+      </div>
+    </article>
+
+    
+  </main>
+
+  <!--Подвал-->
+  <footer>
+    
+    <div class="social_network_container">
+
+      <div class="social_network">
+        <div class="icon">
+          <img src="static/img/footer/twitter.png">
+        </div>
+      </div>
+
+      <div class="social_network">
+        <div class="icon">
+          <img src="static/img/footer/youtube.png">
+        </div>
+      </div>
+
+      <div class="social_network">
+        <div class="icon">
+          <img src="static/img/footer/vk.png">
+        </div>
+      </div>
+
+      <div class="social_network">
+        <div class="icon">
+          <img src="static/img/footer/instagram.png">
+        </div>
+      </div>
+      
+      <div class="social_network">
+        <div class="icon">
+          <img src="static/img/footer/telegram.png">
+        </div>
+      </div>
+      
+    </div>
+
+  </footer>
+  
+  </div>
+</body>
+</html>
